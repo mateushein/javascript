@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <style>
+        #area {
+
+            background-color: crimson;
+            color: aliceblue;
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            line-height: 300px;
+            font: normal Arial 25pt;
+        }
+    </style>
+</head>
+<body>
+    <div id="area"> 
+            Interaja...
+    </div>
+    <!-- Você pode usar onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()" dentro da div no lugar do addEventListener-->
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        function clicar() {
+            var a = document.getElementById('area')
+            a.innerText = 'Clicou!'
+            a.style.background = 'green'
+            a.style.color = 'black'
+        }
+        function entrou() {
+            var a = document.getElementById('area')
+            a.innerText = 'Entrou!'            
+            a.style.background = 'blue'
+            a.style.color = 'yellow'
+        }function saiu() {
+            var a = document.getElementById('area')
+            a.innerText = 'Saiu!'
+            a.style.background = 'purple'
+            a.style.color = 'pink'
+        }
+    </script>
+</body>
+</html>

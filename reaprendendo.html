@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reaprendendo</title>
+    <style>
+        body {
+            font:normal 10pt Arial; color: white;
+            background-color: rgb(0, 0, 0);
+        }
+
+        #quad {
+        background-color: crimson;
+            color: aliceblue;
+            width: 750px;
+            height: px;
+            text-align: center;
+            line-height: 300px;
+            font: normal Arial 30pt;
+        }
+        #res {
+            margin-top: 20px;
+            font : normal Arial 30pt;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>Reaprendendo a como programar em JavaScript e HTML</h1>
+
+    <div id="quad"><input type="number" id="tn1">
+    <input type="number" id="tn2"> <input type="button" value="Somar" onclick="onclickSomar()">
+    <div id="res">Resultado</div>
+</div>
+<script>
+    function onclickSomar() {
+        var tn1 = document.getElementById('tn1')
+        var tn2 = document.getElementById('tn2')
+        var res = document.getElementById('res')
+        var n1 = Number(tn1.value)
+        var n2 = Number(tn2.value)
+        var s = n1 + n2
+        res.innerHTML = `A soma entre os dois valores digitados é igual a <strong><mark>${s}</mark></strong>`
+
+    }
+</script>
+</body>
+</html>
