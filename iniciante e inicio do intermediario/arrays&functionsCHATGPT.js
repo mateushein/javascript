@@ -109,3 +109,4 @@ function notasAcimaDaMedia(array) {
         }
  }   return acima
 } console.log(`Como a nota mínima pra passar é 7, as notas acima da média são ${notasAcimaDaMedia(vetor)}.`)
+//2w
